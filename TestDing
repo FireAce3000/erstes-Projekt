@@ -36,27 +36,27 @@ Was wollen sie machen? / What do you wnat to do?
 3 -
 
 AUSWAHL: ");
-        string auswahl = Console.ReadLine();
-
-        if (int.TryParse(input, out int auswahl))
-        {
-            switch (auswahl)
+            string auswahl = Console.ReadLine();
+            
+            if (int.TryParse(input, out int auswahl))
             {
-                case 1:
-                    Console.WriteLine ($"auswahl / selection: {auswahl}");
-                    break;
-                case 2:
-                    Console.WriteLine ($"auswahl / selection: {auswahl}");
-                    break;
-                case 3:
-                    Console.WriteLine ($"auswahl / selection: {auswahl}");
-                    break;
-                default:
-                    Console.WriteLine ($"auswahl / selection: {auswahl} die Zahl ist nicht die richtige / The number is not korrekt");
-                    auswahl = -1;
-                    break;
+                switch (auswahl)
+                {
+                    case 1:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    case 2:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    case 3:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    default:
+                        Console.WriteLine ($"auswahl / selection: {auswahl} die Zahl ist nicht die richtige / The number is not korrekt");
+                        auswahl = -1;
+                        break;
+                }
             }
-        }
         }while(auswahl != 0);
     }
 }
