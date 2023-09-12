@@ -1,0 +1,62 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        // Überschrift
+        Console.WriteLine("erstes Projekt");
+        Console.WriteLine("first project");
+
+        Console.Write("Bitte geben Sie Ihr Alter ein: ");
+        string input = Console.ReadLine();
+
+        if (int.TryParse(input, out int alter))
+        {
+            if (alter >= 18)
+            {
+                Console.WriteLine("Sie sind 18 Jahre oder älter. / You are 18 years or older");
+            }
+            else
+            {
+                Console.WriteLine("Sie sind jünger als 18 Jahre. / You are yunger than 18 years old");
+            }
+        }
+        else
+        {
+            Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl für Ihr Alter ein. / Invalid input. Pleas enter a qhole number for your age.");
+        }
+
+        Console.WriteLine("--- Mananger ---")
+        do {Console.WriteLine($@"
+Was wollen sie machen? / What do you wnat to do?
+0 - Beenden / end
+1 -
+2 - 
+3 -
+
+AUSWAHL: ");
+            string auswahl = Console.ReadLine();
+            
+            if (int.TryParse(input, out int auswahl))
+            {
+                switch (auswahl)
+                {
+                    case 1:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    case 2:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    case 3:
+                        Console.WriteLine ($"auswahl / selection: {auswahl}");
+                        break;
+                    default:
+                        Console.WriteLine ($"auswahl / selection: {auswahl} die Zahl ist nicht die richtige / The number is not korrekt");
+                        auswahl = -1;
+                        break;
+                }
+            }
+        }while(auswahl != 0);
+    }
+}
