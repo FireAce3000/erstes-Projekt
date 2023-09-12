@@ -1,0 +1,9 @@
+Console.WriteLine("erstes Projekt");
+Console.WriteLine("first project");
+
+// alter abfrage
+Console.Write("Wie alt bist du? / How old are you? : ")
+int alter = Console.ReadLine();
+if (alter < 18) Console.WriteLine("du bist 18 oder jünger / you are 18 or younger");
+else if (alter < 100) Console.WriteLine ("du bist alt genug / your older ist ok")
+else Console.WriteLine ("du bist zu alt / you are to old");
