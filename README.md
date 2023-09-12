@@ -1,3 +1,3 @@
 # erstes-Projekt
 
-Console.WriteLine("erstes Prjekt");
+Console.WriteLine("erstes Projekt");
