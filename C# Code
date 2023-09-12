@@ -4,7 +4,7 @@ class Program
 {
     static void Main()
     {
-        // Überschrift / Headlines -g
+        // Überschrift / Headlines 
         Console.WriteLine("erstes Projekt");
         Console.WriteLine("first project");
 
