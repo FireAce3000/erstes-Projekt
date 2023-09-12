@@ -4,7 +4,8 @@ class Program
 {
     static void Main()
     {
-        // Überschrift / Headlines - git add 'C# Code' -> git commit -m "test" -> git push
+        // git add 'C# Code' -> git commit -m "test" -> git push
+        // Überschrift / Headlines 
         Console.WriteLine("erstes Projekt");
         Console.WriteLine("first project");
 
