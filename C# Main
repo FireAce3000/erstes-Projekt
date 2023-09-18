@@ -7,7 +7,7 @@ class Program
         // git add 'C# Code' -> git commit -m "test" -> git push
         // Test Montag morgen
         // Überschrift / Headlines 
-        // branch erstellen und bearbeiten
+        // branch erstellen und bearbeiten / create branch and update
         Console.WriteLine("erstes Projekt");
         Console.WriteLine("first project");
 
