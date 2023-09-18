@@ -7,5 +7,5 @@
   ### Datei in C# Code geändert mit Github Befehle/ change filename in C# Code with github code
 ## 20230918:
   ### Test Montag morgen / test monday morning
-  ### neuer Branch erstellt
-  ### test
+  ### neuer Branch erstellt / add new branch
+  ### test / test
