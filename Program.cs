@@ -26,6 +26,9 @@
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl für Ihr Alter ein. / Invalid input. Pleas enter a qhole number for your age.");
             }
+
+            
+
         }
     }
 }
