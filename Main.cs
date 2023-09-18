@@ -1,8 +1,8 @@
 using System;
 
-class Program
+public class Program
 {
-    static void Main()
+    public static void Main(string[] args)
     {
         // git add 'C# Code' -> git commit -m "test" -> git push
         // Test Montag morgen
