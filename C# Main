@@ -74,6 +74,6 @@ AUSWAHL: ");
 
     public void addData()
     {
-        Console.WriteLine ("*** Daten werden hinzugefügt / Data is added ***");
+        Console.WriteLine ("*** Daten werden hinzugefügt / Data will be added ***");
     }
 }
