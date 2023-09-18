@@ -1,0 +1,15 @@
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.csproj.AssemblyReference.cache
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.GeneratedMSBuildEditorConfig.editorconfig
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.AssemblyInfoInputs.cache
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.AssemblyInfo.cs
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.csproj.CoreCompileInputs.cache
+/workspaces/erstes-Projekt/bin/Debug/net7.0/erstes-Projekt
+/workspaces/erstes-Projekt/bin/Debug/net7.0/erstes-Projekt.deps.json
+/workspaces/erstes-Projekt/bin/Debug/net7.0/erstes-Projekt.runtimeconfig.json
+/workspaces/erstes-Projekt/bin/Debug/net7.0/erstes-Projekt.dll
+/workspaces/erstes-Projekt/bin/Debug/net7.0/erstes-Projekt.pdb
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.dll
+/workspaces/erstes-Projekt/obj/Debug/net7.0/refint/erstes-Projekt.dll
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.pdb
+/workspaces/erstes-Projekt/obj/Debug/net7.0/erstes-Projekt.genruntimeconfig.cache
+/workspaces/erstes-Projekt/obj/Debug/net7.0/ref/erstes-Projekt.dll
