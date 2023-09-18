@@ -4,8 +4,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("erstes Projekt");
-            Console.WriteLine("first project");
+            var currentDate = DateTime.Now;
+            Console.WriteLine($"erstes Projekt am {currentDate}");
+            Console.WriteLine($"first project at {currentDate}");
 
             Console.Write("Bitte geben Sie Ihr Alter ein: ");
             string input = Console.ReadLine();
@@ -25,6 +26,8 @@
             {
                 Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl für Ihr Alter ein. / Invalid input. Pleas enter a qhole number for your age.");
             }
+
+            
         }
     }
 }
