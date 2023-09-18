@@ -10,3 +10,5 @@
   ###   .) neuer Branch erstellt / add new branch
   ###   .) test / test branchmittag
   ###   .) ks branch2
+
+  ###   .) Überarbeitung das der C# Code auch ausführbar ist mit dem Befehl "dotnet run" im Terminal
