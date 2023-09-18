@@ -30,7 +30,7 @@ class Program
             Console.WriteLine("Ungültige Eingabe. Bitte geben Sie eine ganze Zahl für Ihr Alter ein. / Invalid input. Pleas enter a qhole number for your age.");
         }
 
-        Console.WriteLine("--- Mananger ---")
+        Console.Write("--- Mananger ---")
         do {Console.Write($@"
 Was wollen sie machen? / What do you want to do?
 0 - Programm wird beendet / Program is ended
