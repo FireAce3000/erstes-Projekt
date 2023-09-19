@@ -1,11 +1,12 @@
+using System.Dynamic;
+using System.Xml.Schema;
+
 namespace HelloWorld
 {
     class Person
     {
-        static void Main(string[] args)
-        {
-
-            
-        }
+        public string vorname {get; set;} = "";
+        public string nachname {get; set;} = "";
+        public int alter {get; set;}
     }
 }

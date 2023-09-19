@@ -5,11 +5,13 @@
   ###   .) überprüfung bezüglich des alters / function alter
   ###   .) Manager wird erstell und noch bearbeitet / add Manager
   ###   .) Datei in C# Code geändert mit Github Befehle / change filename in C# Code with github code
+
 ##  20230918
   ###   .) Test Montag morgen / test monday morning
   ###   .) neuer Branch erstellt / add new branch
   ###   .) test / test branchmittag
-  ###   .) ks branch2
+  ###   .) branch test ksbranch2
 
+## 20230919
   ###   .) Überarbeitung das der C# Code auch ausführbar ist mit dem Befehl "dotnet run" im Terminal
   ###   .) Ordner Struktur  erstellt / create folder structur
