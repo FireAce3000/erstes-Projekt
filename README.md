@@ -12,3 +12,4 @@
   ###   .) ks branch2
 
   ###   .) Überarbeitung das der C# Code auch ausführbar ist mit dem Befehl "dotnet run" im Terminal
+  ###   .) Ordner Struktur  erstellt / create folder structur
