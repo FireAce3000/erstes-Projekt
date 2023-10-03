@@ -105,6 +105,9 @@ namespace ERSTES
             }
         }
 
+        /// <summary>
+        /// speichert die Liste in eine JSON mit: using System.Text.Json; EINTRAGEN - Für .NET Core 5 oder höher
+        /// </summary>
         public static void SaveProdukteToJSON()
         {
             // using Newtonsoft.Json; EINTRAGEN - Für .NET Core 4 oder früher
@@ -114,6 +117,9 @@ namespace ERSTES
             File.WriteAllText(FileName, jsonString);
         }
 
+        /// <summary>
+        /// Ladet eine Liste von einer JSON datei: using System.Text.Json; EINTRAGEN - Für .NET Core 5 oder höher
+        /// </summary>
         public static void LoadProdukteFromJSON()
         {
             if (File.Exists(FileName))
@@ -130,6 +136,9 @@ namespace ERSTES
             }
         }
 
+        /// <summary>
+        /// Löscht alle Daten in der Liste
+        /// </summary>
         public static void ClearProdukte()
         {
             ProduktList.Clear();

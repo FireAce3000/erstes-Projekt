@@ -116,6 +116,10 @@ namespace ERSTES
             }
         }
 
+        /// <summary>
+        /// Ausgabe des strings der im Parameter übergeben wird und dann "--- Weiter mit ENTER ---" ausgibt und erst weiter macht, wenn eine Enter gedrückt wird
+        /// </summary>
+        /// <param name="message"></param>
         private static void Pause(string message = "")
         {
             Console.WriteLine();
@@ -124,6 +128,9 @@ namespace ERSTES
             Console.ReadLine();
         }
 
+        /// <summary>
+        /// Ausgabe aller Produkte in der Produktliste -> ID: ProduktId, Produktname: ProduktName, Beschreibung: Beschreibung
+        /// </summary>
         static void ListAllProdukte()
         {
             Console.WriteLine(" *** Alle Einträge ***");
@@ -137,6 +144,9 @@ namespace ERSTES
             Pause();
         }
 
+        /// <summary>
+        /// neues Produkt erstellen und in die Liste eintragen -> Name und Beschreibung per UserInput
+        /// </summary>
         static void CreateNewProdukt()
         {
             Console.WriteLine(" *** Neuer Eintrag *** ");
@@ -153,6 +163,9 @@ namespace ERSTES
             Pause("Produkt erfolgreich hinzugefügt.");
         }
 
+        /// <summary>
+        /// Updaten eines Produktes (per ID suchen, mit User Input)
+        /// </summary>
         static void UpdateProdukt()
         {
             Console.WriteLine(" *** Eintrag Aktualisieren *** ");
@@ -183,6 +196,9 @@ namespace ERSTES
             }
         }
 
+        /// <summary>
+        /// Löschen eines Produktes (per ID suchen, mit User Input)
+        /// </summary>
         static void DeleteProdukt()
         {
             Console.WriteLine(" *** Eintrag Löschen *** ");
