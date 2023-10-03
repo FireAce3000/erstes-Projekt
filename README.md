@@ -21,5 +21,7 @@
 
 ## 20231002
   ###   .) neue Struktur / new struc
+  test
+  was mach ich hier
   ###   .) neue Funktion hinzugefügt / add new function
   ###   .) Kommentare bei den Funktionen hinzugefügt / add methode comments
