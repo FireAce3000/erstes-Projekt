@@ -9,101 +9,56 @@ namespace ERSTES
     {
         public static void Main(string[] args)
         {
-
             int auswahl;
 
             do
-
             {
-
                 Console.Clear(); // Hier wird der Bildschirm gelöscht
-
                 Console.WriteLine("#### Produkte Verwalten ####");
-
                 Console.WriteLine();
-
                 Console.WriteLine("Bitte wählen Sie eine Option:");
-
                 Console.WriteLine("0 - Beenden");
-
                 Console.WriteLine("1 - ALLE - Alle Produkte auflisten");
-
                 Console.WriteLine("2 - NEU - Neues Produkt erstellen");
-
                 Console.WriteLine("3 - AKTUALISIEREN - Ein Produkt bearbeiten");
-
                 Console.WriteLine("4 - LÖSCHEN - Ein Produkt löschen");
-
                 Console.WriteLine("5 - DUMMY - Dummydaten laden");
-
                 Console.WriteLine("6 - LADEN - Aus der Datei laden");
-
                 Console.WriteLine("7 - SPEICHERN - In die Datei speichern");
-
                 Console.WriteLine("8 - LEEREN - Aktuelle Liste leeren");
-
                 Console.WriteLine();
-
                 Console.Write("AUSWAHL: ");
 
                 if (int.TryParse(Console.ReadLine(), out auswahl))
-
                 {
-
                     Console.WriteLine("----------------------------------");
 
                     switch (auswahl)
-
                     {
-
                         case 0:
-
                             Console.WriteLine("Programm wird beendet.");
-
                             break;
-
                         case 1:
-
                             // ALLE - Alle Produkte auflisten
-
                             ListAllProdukte();
-
                             break;
-
                         case 2:
-
                             // NEU - Neues Produkt erstellen
-
                             CreateNewProdukt();
-
                             break;
-
                         case 3:
-
                             // AKTUALISIEREN - Ein Produkt bearbeiten
-
                             UpdateProdukt();
-
                             break;
-
                         case 4:
-
                             // LÖSCHEN - Ein Produkt löschen
-
                             DeleteProdukt();
-
                             break;
-
                         case 5:
-
                             // DUMMY - Dummydaten laden
-
                             DatenManager.DummyDatenLaden();
-
                             Pause("Dummydaten geladen");
-
                             break;
-
                         case 6:
 
                             // LADEN - Aus der Datei laden

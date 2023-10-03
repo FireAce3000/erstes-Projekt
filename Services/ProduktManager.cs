@@ -109,60 +109,59 @@ namespace ERSTES
                 // dass das Produkt nicht gefunden wurde.
 
             }
-            
-            public static void SaveProdukteToJSON()
+
+        }
+        public static void SaveProdukteToJSON()
+
+        {
+
+            // using Newtonsoft.Json; EINTRAGEN - Für .NET Core 4 oder früher
+
+            // var jsonString = JsonConvert.SerializeObject(PersonList, Formatting.Indented);
+
+            // using System.Text.Json; EINTRAGEN - Für .NET Core 5 oder höher
+
+            var jsonString = JsonSerializer.Serialize(ProduktList, new JsonSerializerOptions { WriteIndented = true });
+
+            File.WriteAllText(FileName, jsonString);
+
+        }
+
+
+
+        public static void LoadProdukteFromJSON()
+        {
+
+            if (File.Exists(FileName))
 
             {
+
+                var jsonString = File.ReadAllText(FileName);
 
                 // using Newtonsoft.Json; EINTRAGEN - Für .NET Core 4 oder früher
 
-                // var jsonString = JsonConvert.SerializeObject(PersonList, Formatting.Indented);
+                // ProduktList = JsonConvert.DeserializeObject<List<Produkt>>(jsonString);
 
                 // using System.Text.Json; EINTRAGEN - Für .NET Core 5 oder höher
 
-                var jsonString = JsonSerializer.Serialize(ProduktList, new JsonSerializerOptions { WriteIndented = true });
-
-                File.WriteAllText(FileName, jsonString);
+                ProduktList = JsonSerializer.Deserialize<List<Produkt>>(jsonString);
 
             }
 
-            public static void LoadProdukteFromJSON()
+            else
 
             {
 
-                if (File.Exists(FileName))
-
-                {
-
-                    var jsonString = File.ReadAllText(FileName);
-
-                    // using Newtonsoft.Json; EINTRAGEN - Für .NET Core 4 oder früher
-
-                    // ProduktList = JsonConvert.DeserializeObject<List<Produkt>>(jsonString);
-
-                    // using System.Text.Json; EINTRAGEN - Für .NET Core 5 oder höher
-
-                    ProduktList = JsonSerializer.Deserialize<List<Produkt>>(jsonString);
-
-                }
-
-                else
-
-                {
-
-                    Console.WriteLine($"Datei {FileName} wurde nicht gefunden.");
-
-                }
+                Console.WriteLine($"Datei {FileName} wurde nicht gefunden.");
 
             }
 
-            public static void ClearProdukte()
+        }
 
-            {
+        public static void ClearProdukte()
+        {
 
-                ProduktList.Clear();
-
-            }
+            ProduktList.Clear();
 
         }
 
