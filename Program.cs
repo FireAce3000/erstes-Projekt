@@ -112,7 +112,7 @@ namespace ERSTES
         {
             foreach (var p in produktListe)
             {
-                Console.WriteLine($"ID: {p.ProduktId}, Produktname: {p.ProduktName}, Beschreibung: {p.Beschreibung}");
+                Console.WriteLine($"ID: {p?.ProduktId}, Produktname: {p?.ProduktName}, Beschreibung: {p?.Beschreibung}");
             }
         }
 
@@ -137,9 +137,9 @@ namespace ERSTES
             Console.WriteLine();
             var produkte = ProduktManager.GetAllProdukte();
 
-            foreach (var produkt in produkte)
+            foreach (var p in produkte)
             {
-                Console.WriteLine($"ID: {produkt.ProduktId}, Produktname: {produkt.ProduktName}, Beschreibung: {produkt.Beschreibung}");
+                Console.WriteLine($"ID: {p?.ProduktId}, Produktname: {p?.ProduktName}, Beschreibung: {p?.Beschreibung}");
             }
             Pause();
         }

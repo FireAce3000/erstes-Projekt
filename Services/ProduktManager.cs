@@ -36,7 +36,8 @@ namespace ERSTES
         /// <returns>ProduktList.FirstOrDefault(p => p.ProduktId == id)</returns>
         public static Produkt GetProduktById(int id)
         {   
-            return ProduktList.FirstOrDefault(p => p.ProduktId == id);
+            var produktMitId = ProduktList.FirstOrDefault(p => p.ProduktId == id);
+            return produktMitId;
         }
 
         // Read: Abrufen aller Produkte
