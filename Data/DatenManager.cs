@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ERSTES
 {
-    internal class DatenManager
+    internal class DatenManager : IManager
     {
         /// <summary>
         /// Ladet 5 Dummydaten in die private Liste vom ProduktManager:
