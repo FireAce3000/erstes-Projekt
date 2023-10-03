@@ -33,9 +33,9 @@ namespace ERSTES
         /// Read: Abrufen eines Produktes anhand seiner ID
         /// </summary>
         /// <param name="id"></param>
-        /// <returns></returns>
+        /// <returns>ProduktList.FirstOrDefault(p => p.ProduktId == id)</returns>
         public static Produkt GetProduktById(int id)
-        {
+        {   
             return ProduktList.FirstOrDefault(p => p.ProduktId == id);
         }
 
@@ -43,7 +43,7 @@ namespace ERSTES
         /// <summary>
         /// Read: Abrufen aller Produkte
         /// </summary>
-        /// <returns></returns>
+        /// <returns>ProduktList</returns>
         public static List<Produkt> GetAllProdukte()
         {
             return ProduktList;
@@ -53,7 +53,7 @@ namespace ERSTES
         /// <summary>
         /// Read: Definition
         /// </summary>
-        /// <returns></returns>
+        /// <returns>definition.Where(x => x.Beschreibung.Contains("Liter")).ToList()</returns>
         public static List<Produkt> Definition()
         {
             var definition = ProduktList;
