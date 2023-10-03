@@ -21,3 +21,5 @@
 
 ## 20231002
   ###   .) neue Struktur / new struc
+  ###   .) neue Funktion hinzugefügt / add new function
+  ###   .) Kommentare bei den Funktionen hinzugefügt / add methode comments

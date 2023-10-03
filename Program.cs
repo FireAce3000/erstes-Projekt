@@ -94,12 +94,20 @@ namespace ERSTES
             } while (auswahl != 0);
         }
 
+        /// <summary>
+        /// Die Methode 'Definition()' ist da zu da, um vom Produktmanager die Daten zuholen und dann Daten zu filtern und
+        /// diese Daten mit der Methode 'ProduktAusgeben(List)' dann in die Konsole zu schreiben
+        /// </summary>
         private static void Definition()
         {
             var definition = ProduktManager.Definition();
             ProduktAusgeben(definition);
         }
 
+        /// <summary>
+        /// Liste Ausgeben mit einem Übergabeparameter, für Methode verwendbar (verwendet in: Definituin())
+        /// </summary>
+        /// <param name="produktListe"></param>
         private static void ProduktAusgeben(List<Produkt> produktListe)
         {
             foreach (var p in produktListe)

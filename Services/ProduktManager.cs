@@ -18,6 +18,10 @@ namespace ERSTES
         private const string FileName = "produkt.json";
 
         // Create: Hinzufügen ein neues Produktes zur Liste
+        /// <summary>
+        /// Create: Hinzufügen ein neues Produktes zur Liste
+        /// </summary>
+        /// <param name="produkt"></param>
         public static void AddProdukt(Produkt produkt)
         {
             produkt.ProduktId = ++Counter; // Zuerst inkrementieren, dann verwenden
@@ -25,24 +29,46 @@ namespace ERSTES
         }
 
         // Read: Abrufen eines Produktes anhand seiner ID
+        /// <summary>
+        /// Read: Abrufen eines Produktes anhand seiner ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public static Produkt GetProduktById(int id)
         {
             return ProduktList.FirstOrDefault(p => p.ProduktId == id);
         }
 
         // Read: Abrufen aller Produkte
+        /// <summary>
+        /// Read: Abrufen aller Produkte
+        /// </summary>
+        /// <returns></returns>
         public static List<Produkt> GetAllProdukte()
         {
             return ProduktList;
         }
 
-        // Read: definition
+        // Read: Definition
+        /// <summary>
+        /// Read: Definition
+        /// </summary>
+        /// <returns></returns>
         public static List<Produkt> Definition()
         {
-            return ProduktList.Where(x => x.Beschreibung.Contains("Liter")).ToList();
+            var definition = ProduktList;
+            definition = definition.Where(x => x.Beschreibung.Contains("Liter")).ToList();
+            return definition;
         }
 
         // Update: Ändern der Details eines bestimmten Produktes
+        /// <summary>
+        /// Update: Ändern der Details eines bestimmten Produktes
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="produktName"></param>
+        /// <param name="beschreibung"></param>
+        /// <exception cref="ArgumentException"></exception>
         public static void UpdateProdukt(int id, string produktName, string beschreibung)
         {
             var produkt = GetProduktById(id);
@@ -54,12 +80,17 @@ namespace ERSTES
             }
             else
             {
-                // Ein Fehler kann hier geworfen oder eine Nachricht zurückgegeben werden,
-                // dass das Produkt nicht gefunden wurde.
+                // Ein Fehler kann hier geworfen oder eine Nachricht zurückgegeben werden, dass das Produkt nicht gefunden wurde.
+                throw new ArgumentException("Das Produkt wurde nicht gefunden");
             }
         }
 
         // Delete: Löschen eines bestimmten Produktes aus der Liste
+        /// <summary>
+        /// Delete: Löschen eines bestimmten Produktes aus der Liste
+        /// </summary>
+        /// <param name="id"></param>
+        /// <exception cref="ArgumentException"></exception>
         public static void DeleteProdukt(int id)
         {
             var produkt = GetProduktById(id);
@@ -69,8 +100,8 @@ namespace ERSTES
             }
             else
             {
-                // Ein Fehler kann hier geworfen oder eine Nachricht zurückgegeben werden,
-                // dass das Produkt nicht gefunden wurde.
+                // Ein Fehler kann hier geworfen oder eine Nachricht zurückgegeben werden, dass das Produkt nicht gefunden wurde.
+                throw new ArgumentException("Das Produkt wurde nicht gefunden");
             }
         }
 
