@@ -1,9 +1,9 @@
 ﻿using System.Net.Mail;
 using System.Security.Cryptography;
-using HelloWorld;
+using ERSTES;
 using System.Threading.Channels;
 
-namespace HelloWorld
+namespace ERSTES
 {
     public class Program
     {
