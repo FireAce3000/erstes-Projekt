@@ -60,43 +60,24 @@ namespace ERSTES
                             Pause("Dummydaten geladen");
                             break;
                         case 6:
-
                             // LADEN - Aus der Datei laden
-
                             ProduktManager.LoadProdukteFromJSON();
-
                             Pause("Daten erfolgreich geladen.");
-
                             break;
-
                         case 7:
-
                             // SPEICHERN - In die Datei speichern
-
                             ProduktManager.SaveProdukteToJSON();
-
                             Pause("Daten erfolgreich gespeichert.");
-
                             break;
-
                         case 8:
-
                             // LEEREN - Aktuelle Liste leeren
-
                             ProduktManager.ClearProdukte();
-
                             Pause("Liste der Personen wurde geleert.");
-
                             break;
-
                         default:
-
                             Pause("Ungültige Auswahl. Bitte erneut wählen.");
-
                             break;
-
                     }
-
                 }
 
                 else

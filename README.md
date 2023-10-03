@@ -18,3 +18,6 @@
 
 ## 20230920
   ###   .) Add DatenManager (neu program)
+
+## 20231002
+  ###   .) neue Struktur / new struc
