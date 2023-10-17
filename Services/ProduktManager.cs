@@ -37,6 +37,13 @@ namespace ERSTES
         public static Produkt GetProduktById(int id)
         {   
             var produktMitId = ProduktList.FirstOrDefault(p => p.ProduktId == id);
+
+            List<Produkt> test = ProduktList.Where(x => x.Beschreibung.StartsWith("Test")).ToList();
+            var test1 = test.OrderByDescending(x => x.Beschreibung).ToList();
+            Produkt test2 = test1.FirstOrDefault();
+            int test3 = test1.Count;
+           
+
             return produktMitId;
         }
 
@@ -59,6 +66,13 @@ namespace ERSTES
         {
             var definition = ProduktList;
             definition = definition.Where(x => x.Beschreibung.Contains("Liter")).ToList();
+            definition = definition.Where(x => x.Beschreibung.StartsWith("1") && x.Beschreibung.EndsWith("r")).ToList();
+            var zahl = definition.Count();
+            // definition = definition.Where(x => x.Beschreibung.EndsWith("r")).ToList();
+            definition = definition.OrderBy(x => x.ProduktName).ToList();
+            var definitionObject = definition.FirstOrDefault();
+            Console.WriteLine("Es wurden "+ zahl + " gefunden");
+
             return definition;
         }
 
@@ -68,7 +82,7 @@ namespace ERSTES
         /// </summary>
         /// <param name="id"></param>
         /// <param name="produktName"></param>
-        /// <param name="beschreibung"></param>
+        /// <param name="beschreibung">"Das Produkt wurde nicht gefunden"</param>
         /// <exception cref="ArgumentException"></exception>
         public static void UpdateProdukt(int id, string produktName, string beschreibung)
         {
