@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "DEVSZpHigmMdW/MuewgRiKeEhe8XN8c557wl9pqIgD61coSzVqB5ykgVA+6FkAF/QVnjbzEBM/9U1fG5qSgpig==",
+  "dgSpecHash": "EKlTL9Tx8YvgsxV51UU2T8Gs5KwGY3bAUZ8wK4O+bVA4nEO/WbfUlut5TY2NL7NBCcHi+DVmWzJJPVzNT1CrJQ==",
   "success": true,
-  "projectFilePath": "/workspaces/erstes-Projekt/erstes-Projekt.csproj",
+  "projectFilePath": "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
