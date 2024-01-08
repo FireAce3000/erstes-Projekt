@@ -11,7 +11,7 @@ namespace ERSTES
         public static void Main(string[] args)
         {
             int auswahl;
-
+            string test = "";
             do
             {
                 Console.Clear(); // Hier wird der Bildschirm gelöscht
