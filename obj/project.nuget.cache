@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EKlTL9Tx8YvgsxV51UU2T8Gs5KwGY3bAUZ8wK4O+bVA4nEO/WbfUlut5TY2NL7NBCcHi+DVmWzJJPVzNT1CrJQ==",
+  "dgSpecHash": "agOFZf82xIkDAyGlIYAHlLEVEBPBaG/xSy9pjlE7c6DYip6UKxVmaZmpuBem8uEDndHH8MXFxnMod+oKt5mURw==",
   "success": true,
-  "projectFilePath": "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj",
+  "projectFilePath": "/home/kevin/Documents/Csharp/MT4/erstes-Projekt.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

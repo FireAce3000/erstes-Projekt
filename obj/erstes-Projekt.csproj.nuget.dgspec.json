@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj": {}
+    "/home/kevin/Documents/Csharp/MT4/erstes-Projekt.csproj": {}
   },
   "projects": {
-    "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj": {
+    "/home/kevin/Documents/Csharp/MT4/erstes-Projekt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj",
+        "projectUniqueName": "/home/kevin/Documents/Csharp/MT4/erstes-Projekt.csproj",
         "projectName": "erstes-Projekt",
-        "projectPath": "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/erstes-Projekt.csproj",
+        "projectPath": "/home/kevin/Documents/Csharp/MT4/erstes-Projekt.csproj",
         "packagesPath": "/home/kevin/.nuget/packages/",
-        "outputPath": "/home/kevin/Documents/Csharp/GitHub/erstes-Projekt/obj/",
+        "outputPath": "/home/kevin/Documents/Csharp/MT4/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/kevin/.nuget/NuGet/NuGet.Config"
